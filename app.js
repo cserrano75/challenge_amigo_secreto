@@ -39,3 +39,26 @@ function agregarAmigo() {
     }
     return;
 }
+
+function validarDuplicidad(nombre) {
+    //Recorro el array buscando el nombre ingresado
+    for (let largoArray=0; largoArray < listaAmigoSecreto.length;largoArray++) {
+
+        //Si encuentro coincidencia, envio la alerta al usuario
+        //Adicionalmente he definido una variable global que me indica si la condicion se cumple o no
+        //Si hay coincidencias cierro el proceso aca, le envio una alerta al usuario y limpio el cuadro de texto
+
+        if (nombre===listaAmigoSecreto[largoArray]) {
+            coincidencia=true;
+            alert ("El nombre ya está ingresado");
+        }
+
+    limpiarCuadrodeTexto();
+    }
+    return;
+}
+
+function limpiarCuadrodeTexto() {
+    //Limpio el cuadro de texto
+    document.querySelector('#amigo').value = '';
+}
