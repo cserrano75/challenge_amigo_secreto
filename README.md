@@ -2,4 +2,8 @@
 
 - Estado del proyecto: en ejecucion
   
-Para iniciar el programa solo debes agregar a tus amigos a la lista
+Para iniciar el programa solo debes agregar a tus amigos a la lista.
+
+Posteriormente, cuando hayas agregado tu lista de amigos presiona el boton "sortear amigo".
+
+El amigo seleccionado se mostrara en pantalla
