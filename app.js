@@ -40,6 +40,39 @@ function agregarAmigo() {
     return;
 }
 
+function sortearAmigo() {
+
+    //Defino un valor inicial para la variable que almacenara el indice del array
+    let numeroElementos=0;
+
+    //Evaluo si la lista de amigos no esta vacia
+
+    if (listaAmigoSecreto.length>0) {
+        //Sorteo al azar el numero de indice del array y le agrego 1 al numero de elementos
+        let numeroElementos = Math.floor(Math.random() * listaAmigoSecreto.length)+1;
+        
+        //Resto uno del numero sorteado al azar para incluir el 0 en los resultados y 
+        // sortear todos los numeros de indices del array
+        
+        resultado.innerHTML =(`Amigo sorteado : ${listaAmigoSecreto[numeroElementos-1]}`);
+        
+        //Limpio el cuadro de texto
+        listaAmigos.innerHTML ="";
+        limpiarCuadrodeTexto();
+        
+        //Limpio el array de los nombres de amigos
+        listaAmigoSecreto = [];
+
+        return;
+    
+    //Si la lista de amigos esta vacia y se intenta sortear un nombre, envio una alerta
+    } else {
+        //Si antes de sortear el amigo secreto no ha ingresado ningun nombre envio una alerta...
+        alert ('Por favor, inserte un nombre antes de sortear');
+    }
+    
+}
+
 function validarDuplicidad(nombre) {
     //Recorro el array buscando el nombre ingresado
     for (let largoArray=0; largoArray < listaAmigoSecreto.length;largoArray++) {
