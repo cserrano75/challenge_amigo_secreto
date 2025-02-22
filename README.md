@@ -4,7 +4,7 @@
   
 Para iniciar el programa solo debes agregar a tus amigos a la lista.
 
-
+![] (assets/Instrucciones1.png)
 
 Posteriormente, cuando hayas agregado tu lista de amigos presiona el boton "sortear amigo".
 
