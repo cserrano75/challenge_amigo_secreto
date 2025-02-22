@@ -13,3 +13,5 @@ Posteriormente, cuando hayas agregado tu lista de amigos presiona el boton "sort
 El amigo seleccionado se mostrara en pantalla.
 
 ![ ](https://github.com/cserrano75/challenge_amigo_secreto/blob/main/assets/Instrucciones3.png).
+
+En caso de algun problema, reinicia el juego para volver a la configuracion inicial.
